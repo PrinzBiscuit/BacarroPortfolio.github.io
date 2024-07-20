@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id ="header">
+            <div class="container">
+                <nav>
+                    <h1>Bryan.</h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="practicum.html">Practicum</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="capstone.html">Capstone</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <div>
+                        <h1>Hi, I'm Bryan, Bacarro</h1>
+                        <p>An aspiring IT Professional.</p>
+                    </div>
+                    <div class="header-text-img">
+                        <img src="img/Background.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Me -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="img/me.jpg" alt="myself">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p> I am a aspiring IT Professional that have experience in developing and designing websites and database administration. I also do my best to make the project a success. I use my creativity to put a good precentation and also a good communicator towards my peers. My hobbies are reading books/mangas, watching documentaries or anime, listening to music and bulding plastic models "GUNPLA".</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('education')">Education</p>
+                            <p class="tab-links" onclick="openTab('skill')">Skills</p>
+                        </div>
+
+                        <div id="education" class="tab-contents active-tab">
+                            <ul>
+                                <li>College - Bachelor of Science in Information Technology<br><span>Mapúa Malayan Colleges Laguna</span></li>
+                                <li>Senior High School - Information Communication Technology<br><span>Mapúa Malayan Colleges Laguna</span></li>
+                                <li>Juinior High School - General Academics Track<br><span>Canossa School Sta. Rosa Laguna</span></li>
+                            </ul>
+                        </div>
+                        <div id="skill" class="tab-contents">
+                            <ul>
+                                <li>HTML<br><span><img src="img/skill/html.png" alt="html"></span></li>
+                                <li>CSS<br><span><img src="img/skill/css.png" alt="css"></span></li>
+                                <li>Javascript<br><span><img src="img/skill/js.png" alt="js"></span></li>
+                                <li>PHP<br><span><img src="img/skill/php.png" alt="php"></span></li>
+                                <li>MySQL<br><span><img src="img/skill/mysql.png" alt="mysql"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--My Works-->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="subtitle">My Works</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="img/cgps.png" alt="cgps">
+                        <div class="layer">
+                            <h3>2024 - Interactive WEB-BASED STUDENT CURRICULUM GUIDE AND PORTFOLIO (Ongoing Process)</h3>
+                            <p>A web application which grants students to view their curriculum courses and to know what specific course that requires submission of microcredentials and course portfolio. It can create a Curriculum Vitae based from the accumulated activities and projects of the students. Lastly, is the implementation of Multimedia elements, which adds Cutscenes, Videos, Images and Audio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact -->
+         <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p><span><img src="img/email.png" alt="email"></span>bpbacarro@live.mcl.edu.ph</p>
+                        <p><span><img src="img/phone.png" alt="phone"></span>09983411017</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/PrinzBiscuit/" target="_blank" rel="noopener noreferrer"><img src="img/fb.png" alt="facebook"></a>
+                        <a href="https://www.linkedin.com/in/bryan-bacarro-88a48a29a/" target="_blank" rel="noopener noreferrer"><img src="img/ln.png" alt="linkedin"></a>
+                        </div>
+                        <a class="btn btn2" download  href="appendices/CV.pdf">Download CV</a>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <div id="footer">
+            <h1>Bryan.</h1>
+            <p>© 2024 by Bryan, Bacarro (.)</p>
+         </div>
+
+         <script>
+            var tablinks = document.querySelectorAll(".tab-links");
+            var tabcontents = document.querySelectorAll(".tab-contents");
+
+            function openTab(data) {
+            console.log("Hi");
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(data).classList.add("active-tab");
+        }
+         </script>
+    </body>
+</html>
+
+                
+                    
